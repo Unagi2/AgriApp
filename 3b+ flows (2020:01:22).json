@@ -1,0 +1,447 @@
+[
+    {
+        "id": "ad983b6a.707848",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "61f4f894.1cc8f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d5aa42a4.5d4748",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "33637bd1.22e54c",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "64c3db74.42c43c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "33637bd1.22e54c",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "49ffc667.6fcc48",
+        "type": "wiotp-credentials",
+        "z": "",
+        "name": "",
+        "org": "n48fg2",
+        "serverName": "",
+        "devType": "CarbonDioxideSensor-1",
+        "devId": "CDS-1",
+        "keepalive": "60",
+        "cleansession": true,
+        "tls": "",
+        "usetls": false
+    },
+    {
+        "id": "83c3e477.0ba158",
+        "type": "ui_level",
+        "z": "ad983b6a.707848",
+        "group": "64c3db74.42c43c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": 100,
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "off",
+        "peakmode": false,
+        "peaktime": 3000,
+        "x": 610,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "36967538.e46f5a",
+        "type": "inject",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 1400,
+        "wires": [
+            [
+                "c12ed9b7.ad193"
+            ]
+        ]
+    },
+    {
+        "id": "c12ed9b7.ad193",
+        "type": "random",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "low": "1",
+        "high": "30",
+        "inte": "true",
+        "property": "payload",
+        "x": 440,
+        "y": 1400,
+        "wires": [
+            [
+                "83c3e477.0ba158"
+            ]
+        ]
+    },
+    {
+        "id": "d0e3ec6a.0c89d",
+        "type": "ui_button",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "group": "64c3db74.42c43c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 310,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e5a9713.174f",
+        "type": "ui_slider",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "64c3db74.42c43c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 190,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f603de86.9dcc48",
+        "type": "exec",
+        "z": "ad983b6a.707848",
+        "command": "sudo python ./slider/mh_z19.py",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "c271cf00.32833"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d357da68.73cd18",
+        "type": "inject",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "f603de86.9dcc48"
+            ]
+        ]
+    },
+    {
+        "id": "baab0d33.6999b",
+        "type": "debug",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 970,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5511e58a.d4c21c",
+        "type": "wiotp out",
+        "z": "ad983b6a.707848",
+        "authType": "d",
+        "qs": "false",
+        "qsDeviceId": "",
+        "deviceKey": "49ffc667.6fcc48",
+        "deviceType": "CarbonDioxideSensor-1",
+        "deviceId": "",
+        "event": "event",
+        "format": "json",
+        "qos": "",
+        "name": "",
+        "x": 950,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c271cf00.32833",
+        "type": "function",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "func": "// reject empty messages\nif ( msg.payload.trim().length === 0 ) {\n    return null;\n}\n\n// This try/catch seems to be needed because\n// occasionally a malformed JSON string is received\n// from the python script.\n// I couldn't see anything wrong with the strings that raise\n// exceptions, but this stops the errors causing\n// irritating problems.\n// UPDATE since adding the split node and the test for\n// zero length (after trimming) above, I haven't\n// seen the json conversion fail. Leaving it here just in case\n\ntry {\n    msg.payload= JSON.parse(msg.payload.trim());\n} catch(err) {\n    node.error(\"Couldn't convert JSON to object:\"+msg.payload);\n    return null;\n}\n\n// Set the data to have come from the device's assigned name\n// The IoT output node must assert the device\n//  type (along with the login credentials for the Pi gateway)!\nmsg.deviceId = msg.payload.devicename;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 380,
+        "wires": [
+            [
+                "baab0d33.6999b",
+                "5511e58a.d4c21c",
+                "fcd9e58c.5f2328"
+            ]
+        ]
+    },
+    {
+        "id": "2744995f.510566",
+        "type": "csv",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Timestamp,CDS",
+        "skip": "0",
+        "strings": true,
+        "x": 1330,
+        "y": 500,
+        "wires": [
+            [
+                "1db09f27.68e171"
+            ]
+        ]
+    },
+    {
+        "id": "1db09f27.68e171",
+        "type": "file",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "filename": "/home/pi/CDS.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1530,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcd9e58c.5f2328",
+        "type": "function",
+        "z": "ad983b6a.707848",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 500,
+        "wires": [
+            [
+                "44ca494c.01bc88"
+            ]
+        ]
+    },
+    {
+        "id": "44ca494c.01bc88",
+        "type": "change",
+        "z": "ad983b6a.707848",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.CDS",
+                "pt": "msg",
+                "to": "payload.data",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.data",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 500,
+        "wires": [
+            [
+                "2744995f.510566"
+            ]
+        ]
+    }
+]

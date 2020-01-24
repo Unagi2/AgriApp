@@ -1,0 +1,4299 @@
+[
+    {
+        "id": "cc710dc2.0ba05",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6f35b763.d5ed18",
+        "type": "tab",
+        "label": "フロー 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3cd7dfb9.44bd3",
+        "type": "tab",
+        "label": "フロー 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c85fae1.32d9c5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ae018ca.869347",
+        "type": "ui_group",
+        "z": "",
+        "name": "ST-1",
+        "tab": "78afc80b.f733b",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "78afc80b.f733b",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IoT Sensor",
+        "icon": "dashboard"
+    },
+    {
+        "id": "35891733.c582d",
+        "type": "ui_group",
+        "z": "",
+        "name": "ST-2",
+        "tab": "78afc80b.f733b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1b23914e.966e77",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Test",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "85983638.46c4b",
+        "type": "ui_tab",
+        "name": "Tab 3",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "53d3c2a8.66326c",
+        "type": "wiotp-credentials",
+        "z": "",
+        "name": "",
+        "org": "n48fg2",
+        "serverName": "",
+        "devType": "gwtype",
+        "devId": "gw01",
+        "keepalive": "60",
+        "cleansession": true,
+        "tls": "",
+        "usetls": false
+    },
+    {
+        "id": "e30ea184.cc433",
+        "type": "wiotp-credentials",
+        "z": "",
+        "name": "",
+        "org": "n48fg2",
+        "serverName": "",
+        "devType": "gw01retype",
+        "devId": "Gateway01",
+        "keepalive": "60",
+        "cleansession": true,
+        "tls": "",
+        "usetls": false
+    },
+    {
+        "id": "7d3f1d8.cd6a2e4",
+        "type": "linetoken",
+        "z": "",
+        "name": "AgriApp"
+    },
+    {
+        "id": "19ec8eb4.f8e3c1",
+        "type": "split",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 250,
+        "y": 2920,
+        "wires": [
+            [
+                "4a12eaf0.dc5c24"
+            ]
+        ]
+    },
+    {
+        "id": "2bed4ac6.ee64a6",
+        "type": "daemon",
+        "z": "cc710dc2.0ba05",
+        "name": "Connect to Sensortags",
+        "command": "sudo",
+        "args": "python -u /home/pi/sensortagcollector.py -s -o -d 54:6C:0E:78:E0:05=ST-1 54:6C:0E:52:F9:BD=ST-2",
+        "autorun": true,
+        "cr": false,
+        "redo": true,
+        "op": "string",
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "eff48d24.97578",
+                "53bfe423.b6223c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4a12eaf0.dc5c24",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "JSON String to Object",
+        "func": "// reject empty messages\nif ( msg.payload.trim().length === 0 ) {\n    return null;\n}\n\n// This try/catch seems to be needed because\n// occasionally a malformed JSON string is received\n// from the python script.\n// I couldn't see anything wrong with the strings that raise\n// exceptions, but this stops the errors causing\n// irritating problems.\n// UPDATE since adding the split node and the test for\n// zero length (after trimming) above, I haven't\n// seen the json conversion fail. Leaving it here just in case\n\ntry {\n    msg.payload=JSON.parse(msg.payload.trim());\n} catch(err) {\n    node.error(\"Couldn't convert JSON to object:\"+msg.payload);\n    return null;\n}\n\n// Set the data to have come from the device's assigned name\n// The IoT output node must assert the device\n//  type (along with the login credentials for the Pi gateway)!\nmsg.deviceId = msg.payload.devicename ;\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 2920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7457642b.dd927c",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "オブジェクト形式出力",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 920,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f4fbed07.9eb7a8",
+        "type": "moment",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "Asia/Tokyo",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD HH:mm",
+        "locale": "ja_JP",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "Asia/Tokyo",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "9e8e6a9b.abc75"
+            ]
+        ]
+    },
+    {
+        "id": "3fb1e9ec.0dbc5e",
+        "type": "inject",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "*/5 0-22 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "f4fbed07.9eb7a8"
+            ]
+        ]
+    },
+    {
+        "id": "9e8e6a9b.abc75",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 810,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d9c5ee02.a24e6",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_All_Data.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2170,
+        "y": 3300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e204cdd4.fb994",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "timestamp,devicename,battery,humidity,barometer,IRtemperature,lightmeter",
+        "skip": "0",
+        "x": 1750,
+        "y": 3300,
+        "wires": [
+            [
+                "cdadfd8f.b19de",
+                "d9c5ee02.a24e6"
+            ]
+        ]
+    },
+    {
+        "id": "faf4d81.3d2c128",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "getTime",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nvar IRtemperature = msg.payload.IRtemperature;\nmsg.payload =  {\n    \"timestamp\":getCurrentTime(),\n    \"devicename\":msg.payload.devicename,\n    //\"d\": msg.payload.d\n    \"battery\":msg.payload.battery,\n    \"humidity\": msg.payload.humidity,\n    \"barometer\": msg.payload.barometer[1],\n    \"IRtemperature\":msg.payload.IRtemperature,\n    \"lightmeter\":msg.payload.lightmeter\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1580,
+        "y": 3300,
+        "wires": [
+            [
+                "58eabaaa.8416c4",
+                "e204cdd4.fb994"
+            ]
+        ]
+    },
+    {
+        "id": "eff48d24.97578",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "string形式出力",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 440,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "464434cb.3cc9cc",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "payload.d",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "payload.humidity[1]",
+                "vt": "msg"
+            },
+            {
+                "t": "eq",
+                "v": "payload.battery",
+                "vt": "msg"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1570,
+        "y": 3400,
+        "wires": [
+            [
+                "8f07420d.9a694"
+            ],
+            [
+                "b951d39.e88453"
+            ]
+        ]
+    },
+    {
+        "id": "8818e0d5.bd59",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_humidity_Data.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2190,
+        "y": 3400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d37b787.77b418",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": false,
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1910,
+        "y": 3400,
+        "wires": [
+            [
+                "8818e0d5.bd59"
+            ]
+        ]
+    },
+    {
+        "id": "2b7a26d8.9c3dba",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_battery_Data.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2190,
+        "y": 3440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab5efdaa.df761",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": false,
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1910,
+        "y": 3440,
+        "wires": [
+            [
+                "2b7a26d8.9c3dba"
+            ]
+        ]
+    },
+    {
+        "id": "ef977025.3d6bc",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1570,
+        "y": 3540,
+        "wires": [
+            [
+                "e0150266.a3f54"
+            ]
+        ]
+    },
+    {
+        "id": "e2b93198.81e78",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_join_Data.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2000,
+        "y": 3540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0150266.a3f54",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": false,
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1730,
+        "y": 3540,
+        "wires": [
+            [
+                "e2b93198.81e78"
+            ]
+        ]
+    },
+    {
+        "id": "34fca5b5.f5932a",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_elseif_Data.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2020,
+        "y": 3580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98fa21a5.f0a24",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1750,
+        "y": 3580,
+        "wires": [
+            [
+                "34fca5b5.f5932a"
+            ]
+        ]
+    },
+    {
+        "id": "fcb252a1.6c4ed",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "getTime",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nif(msg.payload===\"humidity\") {\n    msg.payload = {\n        \"timestamp\":getCurrentTime(),\n        \"devicename\":msg.payload.devicename,\n        \"humidity\":msg.payload.humidity[0]\n    }\n    return msg;\n}\nelse if(msg.payload===\"barometer\"){\n    msg.payload = {\n        \"timestamp\":getCurrentTime(),\n        \"devicename\":msg.payload.devicename,\n        \"barometer\": msg.payload.barometer[1]\n    }\n    return msg;\n}\n\nelse if(msg.payload===\"IRtemperature\"){\n    msg.payload = {\n        \"timestamp\":getCurrentTime(),\n        \"devicename\":msg.payload.devicename,\n        \"IRtemperature\":msg.payload.IRtemperature[0]\n    }\n    return msg;\n}\n\nelse if(msg.payload===\"lightmeter\"){\n    msg.payload =  {\n        \"timestamp\":getCurrentTime(),\n        \"devicename\":msg.payload.devicename,\n         //\"d\": msg.payload.d,\n         \"lightmeter\":msg.payload.lightmeter\n        //\"objectTemp\": msg.payload.d.objectTemp\n    }\n    return msg;\n}\nelse \n    return [null]\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1580,
+        "y": 3580,
+        "wires": [
+            [
+                "98fa21a5.f0a24"
+            ]
+        ]
+    },
+    {
+        "id": "cdadfd8f.b19de",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "csv形式出力",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2130,
+        "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "58eabaaa.8416c4",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_All_Data.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1810,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f07420d.9a694",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "getTime",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"timestamp\":getCurrentTime(),\n    \"devicename\":msg.payload.devicename,\n    \"humidity\": msg.payload.humidity\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1760,
+        "y": 3400,
+        "wires": [
+            [
+                "7d37b787.77b418"
+            ]
+        ]
+    },
+    {
+        "id": "b951d39.e88453",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "getTime",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"timestamp\":getCurrentTime(),\n    \"devicename\":msg.payload.devicename,\n    \"battery\": msg.payload.battery\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1760,
+        "y": 3440,
+        "wires": [
+            [
+                "ab5efdaa.df761"
+            ]
+        ]
+    },
+    {
+        "id": "da5c6355.b7401",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "SensorTagからのデータ取得",
+        "info": "",
+        "x": 220,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "188ceaeb.e87095",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "各センサ情報をcsvに列挙して格納",
+        "info": "csvの理想\n\n        Time        | Devicename | Battery | Humidity | Lightmeter\n2019-10-07T14:34    |    ST-2    |   89    |    42.6  |     112",
+        "x": 540,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "ac5a778b.facf08",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "温度，湿度，気圧の値が格納された配列から，抜き出せない",
+        "info": "サンプル\n\nmsg.payload ={\n    msg.payload = msg.payload.IRtemperature[0]\n}\n\nreturn msg",
+        "x": 620,
+        "y": 3160,
+        "wires": []
+    },
+    {
+        "id": "6bd97e23.c3b8e",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "IBM IoTにデータ出力",
+        "info": "",
+        "x": 880,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c93e3c0a.376ca",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "payload.devicename",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ST-1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ST-2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 3480,
+        "wires": [
+            [
+                "4b5d4055.8ace3",
+                "d0f113ab.abd3f",
+                "25dd3293.1493be",
+                "f71dbf2e.923a6",
+                "54c5a48c.47736c",
+                "610821d1.30aa7"
+            ],
+            [
+                "97c217dc.2da018",
+                "f7b98327.1d9d",
+                "d5aeb982.5c8b98",
+                "f6a28eda.f2393",
+                "90ce1ae4.ec5af8",
+                "da1084a1.8ad548"
+            ]
+        ]
+    },
+    {
+        "id": "4b5d4055.8ace3",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "ST-1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 870,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "97c217dc.2da018",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "ST-2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 870,
+        "y": 3740,
+        "wires": []
+    },
+    {
+        "id": "d0f113ab.abd3f",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   \"IRtemperature\":msg.payload.IRtemperature[0]\n    //\"humidity\":msg.payload.humidity[1],\n    //\"barometer\":msg.payload.barometer[1],\n    //\"lightmeter\":msg.payload.lightmeter,\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3280,
+        "wires": [
+            [
+                "ec5307c0.1c5dc8",
+                "34d1efc5.4cb548"
+            ]
+        ]
+    },
+    {
+        "id": "c59fb59d.230dc8",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST1_temperature.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1250,
+        "y": 3280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec5307c0.1c5dc8",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 1050,
+        "y": 3280,
+        "wires": [
+            [
+                "c59fb59d.230dc8"
+            ]
+        ]
+    },
+    {
+        "id": "f7b98327.1d9d",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nvar IRtemperature = msg.payload.IRtemperature;\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   \"IRtemperature\":msg.payload.IRtemperature[0]\n   //\"humidity\": msg.payload.humidity[1],\n   //\"battery\":msg.payload.battery,\n   //\"barometer\": msg.payload.barometer[1],\n   //\"lightmeter\":msg.payload.lightmeter\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3520,
+        "wires": [
+            [
+                "ce34a0a1.966e4"
+            ]
+        ]
+    },
+    {
+        "id": "693f3dab.361214",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST2_temperature.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1250,
+        "y": 3520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce34a0a1.966e4",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3520,
+        "wires": [
+            [
+                "693f3dab.361214"
+            ]
+        ]
+    },
+    {
+        "id": "25dd3293.1493be",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    \"humidity\":msg.payload.humidity[1]\n    //\"barometer\":msg.payload.barometer[1],\n    //\"lightmeter\":msg.payload.lightmeter,\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3320,
+        "wires": [
+            [
+                "44a8c76f.994598",
+                "34d1efc5.4cb548"
+            ]
+        ]
+    },
+    {
+        "id": "d61b7b1e.ab51c8",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST1_humidity.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44a8c76f.994598",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3320,
+        "wires": [
+            [
+                "d61b7b1e.ab51c8"
+            ]
+        ]
+    },
+    {
+        "id": "f71dbf2e.923a6",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    \"barometer\":msg.payload.barometer[1]\n    //\"lightmeter\":msg.payload.lightmeter,\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3360,
+        "wires": [
+            [
+                "5eb4a55a.05b08c",
+                "34d1efc5.4cb548"
+            ]
+        ]
+    },
+    {
+        "id": "51b51eb.f16efe",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST1_barometer.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5eb4a55a.05b08c",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "x": 1050,
+        "y": 3360,
+        "wires": [
+            [
+                "51b51eb.f16efe"
+            ]
+        ]
+    },
+    {
+        "id": "54c5a48c.47736c",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    //\"barometer\":msg.payload.barometer[1],\n    \"lightmeter\":msg.payload.lightmeter\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3400,
+        "wires": [
+            [
+                "8eee53ea.dd114",
+                "34d1efc5.4cb548"
+            ]
+        ]
+    },
+    {
+        "id": "2f1e354f.49bbea",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST1_lightmeter.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8eee53ea.dd114",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 1050,
+        "y": 3400,
+        "wires": [
+            [
+                "2f1e354f.49bbea"
+            ]
+        ]
+    },
+    {
+        "id": "610821d1.30aa7",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    //\"barometer\":msg.payload.barometer[1],\n    //\"lightmeter\":msg.payload.lightmeter,\n    \"battery\":msg.payload.battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3440,
+        "wires": [
+            [
+                "4a0eaf49.cdc0e",
+                "34d1efc5.4cb548"
+            ]
+        ]
+    },
+    {
+        "id": "8f8d1e37.2b6c1",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST1_battery.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1230,
+        "y": 3440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a0eaf49.cdc0e",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3440,
+        "wires": [
+            [
+                "8f8d1e37.2b6c1"
+            ]
+        ]
+    },
+    {
+        "id": "d5aeb982.5c8b98",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    \"humidity\":msg.payload.humidity[1]\n    //\"barometer\":msg.payload.barometer[1],\n    //\"lightmeter\":msg.payload.lightmeter,\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3560,
+        "wires": [
+            [
+                "ccf67e9d.23b5e"
+            ]
+        ]
+    },
+    {
+        "id": "5720d07c.06572",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST2_humidity.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccf67e9d.23b5e",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3560,
+        "wires": [
+            [
+                "5720d07c.06572"
+            ]
+        ]
+    },
+    {
+        "id": "f6a28eda.f2393",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    \"barometer\":msg.payload.barometer[1]\n    //\"lightmeter\":msg.payload.lightmeter,\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3600,
+        "wires": [
+            [
+                "4c036c29.58b844"
+            ]
+        ]
+    },
+    {
+        "id": "aef39329.a0096",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST2_barometer.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c036c29.58b844",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3600,
+        "wires": [
+            [
+                "aef39329.a0096"
+            ]
+        ]
+    },
+    {
+        "id": "90ce1ae4.ec5af8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    //\"barometer\":msg.payload.barometer[1],\n    \"lightmeter\":msg.payload.lightmeter\n    //\"battery\":msg.payload.battery,\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3640,
+        "wires": [
+            [
+                "d8aa0235.00e77"
+            ]
+        ]
+    },
+    {
+        "id": "5208b11e.394a7",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST2_lightmeter.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 3640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8aa0235.00e77",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3640,
+        "wires": [
+            [
+                "5208b11e.394a7"
+            ]
+        ]
+    },
+    {
+        "id": "da1084a1.8ad548",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \"timestamp\":getCurrentTime(),\n   \"devicename\":msg.payload.devicename,\n   //IRtemperature\":msg.payload.IRtemperature[0],\n    //\"humidity\":msg.payload.humidity[1],\n    //\"barometer\":msg.payload.barometer[1],\n    //\"lightmeter\":msg.payload.lightmeter,\n    \"battery\":msg.payload.battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 3680,
+        "wires": [
+            [
+                "dfde9aaf.da32d8"
+            ]
+        ]
+    },
+    {
+        "id": "521352a2.01975c",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST2_battery.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1230,
+        "y": 3680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfde9aaf.da32d8",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "x": 1050,
+        "y": 3680,
+        "wires": [
+            [
+                "521352a2.01975c"
+            ]
+        ]
+    },
+    {
+        "id": "34d1efc5.4cb548",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1120,
+        "y": 3220,
+        "wires": [
+            [
+                "ba8d39e9.49cac8"
+            ]
+        ]
+    },
+    {
+        "id": "ba8d39e9.49cac8",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1310,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "9f4c1cfb.85d8f",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "MQTT send",
+        "property": "mqtt",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 3000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40c241a7.716678",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "JSON String to Object",
+        "func": "// reject empty messages\nif ( msg.payload.trim().length === 0 ) {\n    return null;\n}\n\n// This try/catch seems to be needed because\n// occasionally a malformed JSON string is received\n// from the python script.\n// I couldn't see anything wrong with the strings that raise\n// exceptions, but this stops the errors causing\n// irritating problems.\n// UPDATE since adding the split node and the test for\n// zero length (after trimming) above, I haven't\n// seen the json conversion fail. Leaving it here just in case\n\ntry {\n    msg.payload= JSON.parse(msg.payload.trim());\n} catch(err) {\n    node.error(\"Couldn't convert JSON to object:\"+msg.payload);\n    return null;\n}\n\n// Set the data to have come from the device's assigned name\n// The IoT output node must assert the device\n//  type (along with the login credentials for the Pi gateway)!\nmsg.deviceId = msg.payload.devicename;\n\n// There's one JSON per sensor\n// accelerometer, barometer, gyrometer, ...\n// standard topic for now\nmsg.topic=\"sensortag/\" + msg.deviceId + \"/std\";\n\n// calculate current angle of sensor\n/*if (msg.payload.hasOwnProperty('accelerometer')) {\n    msg.mqtt=false; // no MQTT for now\n    // compare new (rounded on one decimal) angle with rounded old using accelerometer y and z\n    anglenew = Math.round(Math.atan2(msg.payload.accelerometer[1], msg.payload.accelerometer[2]) * 180 / Math.PI * 10) / 10;\n    var angle = context.get('angle')||0;\n\n    // Mounting the sensor head down\n    // -180 degree or 180 degree = 100% horizontal\n    // if more than 5° off, send angle\n    if (anglenew < -175 || anglenew > 175) {\n        // horizontal\n        msg.mqtt = false;\n    } else {\n        // shutter is not horizontal\n        msg.mqtt = true;\n        // don't send updates, if angle doesn't change\n        if (Math.abs(anglenew - angle) < 1) { msg.mqtt=false; }\n    }\n\n    context.set('angle', anglenew);\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/acc\";\n    msg.payload = angle;\n}\n\n// gyroscope\n// actually I don't need it, so it's the JSON in the payload\nelse if (msg.payload.hasOwnProperty('gyroscope')) {\n    msg.mqtt=true;\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/gyr\";\n}\n*/\n// IR-Temperature\nif (msg.payload.hasOwnProperty('IRtemperature')) {\n    tmpnew = JSON.parse(msg.payload.IRtemperature[0]);\n    tmpnew = Math.round(tmpnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var tmp = context.get('tmp')||0;\n    if (Math.abs(tmpnew - tmp) > 0.15) { msg.mqtt=true; }\n    context.set('tmp', tmpnew);\n    //msg.payload = tmpnew;\n    msg.payload ={\"Temperature\": tmpnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/tmp\";\n}\n\n// Humidity\nif (msg.payload.hasOwnProperty('humidity')) {\n    humnew = JSON.parse(msg.payload.humidity[1]);\n    humnew = Math.round(humnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var hum = context.get('hum')||0;\n    if (Math.abs(humnew - hum) > 0.15) { msg.mqtt=true; }\n    context.set('hum', humnew);\n    //msg.payload = humnew;\n    msg.payload = {\"Humidity\":humnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/hum\";\n}\n/*\n// Barometer\nif (msg.payload.hasOwnProperty('barometer')) {\n    barnew = msg.payload.barometer[1];\n    barnew = Math.round(barnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var bar = context.get('bar')||0;\n    if (Math.abs(barnew - bar) > 0.15) { msg.mqtt=true; }\n    context.set('bar', barnew);\n    //msg.payload = barnew;\n    msg.payload = {\"Baro\":barnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/bar\";\n}\n*/\n// Light\nif (msg.payload.hasOwnProperty('lightmeter')) {\n    luxnew = JSON.parse(msg.payload.lightmeter);\n    luxnew = Math.round(luxnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var lux = context.get('lux')||0;\n    if (Math.abs(luxnew - lux) > 2.5) { msg.mqtt=true; }\n    context.set('lux', luxnew);\n    //msg.payload = luxnew;\n    msg.payload = {\"Light\":luxnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/lux\";\n}\n\n// battery\nif (msg.payload.hasOwnProperty('battery')) {\n    batnew = JSON.parse(msg.payload.battery);\n    batnew = Math.round(batnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var bat = context.get('baterry')||0;\n    if (Math.abs(batnew - bat) > 0.15) { msg.mqtt=true; }\n    context.set('bat', batnew);\n    msg.payload = {\"Battery\":batnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/bat\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "7457642b.dd927c",
+                "714dd67c.a00bb8",
+                "18e90fa3.7645e"
+            ]
+        ]
+    },
+    {
+        "id": "53bfe423.b6223c",
+        "type": "split",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "40c241a7.716678"
+            ]
+        ]
+    },
+    {
+        "id": "4619891e.a2c33",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 250,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "ee21b90b.7e00f8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \t\"Timestamp\" : getCurrentTime(),\n    \"Devicename\": msg.payload.devicename,\n    \"Temperature\" :msg.payload.tmpnew,\n    \"Humidity\":msg.payload.humnew,\n    \"Barometer\":msg.payload.barnew,\n    \"Lightmeter\":msg.payload.luxnew,\n    \"Battery\":msg.payload.battery\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 3960,
+        "wires": [
+            [
+                "8d5ee39b.cb12d8"
+            ]
+        ]
+    },
+    {
+        "id": "8d5ee39b.cb12d8",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 930,
+        "y": 3960,
+        "wires": [
+            [
+                "4fb6fa7a.b2876c"
+            ]
+        ]
+    },
+    {
+        "id": "4fb6fa7a.b2876c",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST-1_all.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1140,
+        "y": 3960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9eb3d6ab.9ff758",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "sensortag/ST-1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sensortag/ST-2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 3980,
+        "wires": [
+            [
+                "ee21b90b.7e00f8"
+            ],
+            [
+                "b9a2bd2d.4872d"
+            ]
+        ]
+    },
+    {
+        "id": "b9a2bd2d.4872d",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "csv converter",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\n\nmsg.payload =  {\n   \t\"Timestamp\" : getCurrentTime(),\n    \"Devicename\": msg.payload.devicename,\n    \"Temperature\" :msg.payload.tmpnew,\n    \"Humidity\":msg.payload.humnew,\n    \"Barometer\":msg.payload.barnew,\n    \"Lightmeter\":msg.payload.luxnew,\n    \"Battery\":msg.payload.battery\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 4000,
+        "wires": [
+            [
+                "3f4bd16d.316cce"
+            ]
+        ]
+    },
+    {
+        "id": "3f4bd16d.316cce",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 930,
+        "y": 4000,
+        "wires": [
+            [
+                "ed349087.502ef8"
+            ]
+        ]
+    },
+    {
+        "id": "ed349087.502ef8",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST-2_all.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1140,
+        "y": 4000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1d68f8e.bac318",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "6",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 4080,
+        "wires": [
+            [
+                "9052170a.59ecf"
+            ]
+        ]
+    },
+    {
+        "id": "79e1cbc8.1dc124",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 4060,
+        "wires": [
+            [
+                "9052170a.59ecf"
+            ]
+        ]
+    },
+    {
+        "id": "9052170a.59ecf",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 870,
+        "y": 4060,
+        "wires": []
+    },
+    {
+        "id": "e9224300.7ad99",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/STall_new.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1090,
+        "y": 4180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4835e9cf.611dc8",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 910,
+        "y": 4180,
+        "wires": [
+            [
+                "e9224300.7ad99"
+            ]
+        ]
+    },
+    {
+        "id": "b917651.b453818",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "JSON String to Object",
+        "func": "msg.deviceId = msg.payload.devicename ;\n\nmsg.payload = {\"Device\":msg.deviceId};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 3940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f3b3403.4b5b8c",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "JSON String",
+        "func": "// reject empty messages\nif ( msg.payload.trim().length === 0 ) {\n    return null;\n}\n\n// This try/catch seems to be needed because\n// occasionally a malformed JSON string is received\n// from the python script.\n// I couldn't see anything wrong with the strings that raise\n// exceptions, but this stops the errors causing\n// irritating problems.\n// UPDATE since adding the split node and the test for\n// zero length (after trimming) above, I haven't\n// seen the json conversion fail. Leaving it here just in case\n\ntry {\n    msg.payload= JSON.parse(msg.payload.trim());\n} catch(err) {\n    node.error(\"Couldn't convert JSON to object:\"+msg.payload);\n    return null;\n}\n\n// Set the data to have come from the device's assigned name\n// The IoT output node must assert the device\n//  type (along with the login credentials for the Pi gateway)!\nmsg.deviceId = msg.payload.devicename;\n\n// There's one JSON per sensor\n// accelerometer, barometer, gyrometer, ...\n// standard topic for now\nmsg.topic=\"sensortag/\" + msg.deviceId + \"/std\";\n\n// calculate current angle of sensor\nif (msg.payload.hasOwnProperty('accelerometer')) {\n    msg.mqtt=false; // no MQTT for now\n    // compare new (rounded on one decimal) angle with rounded old using accelerometer y and z\n    anglenew = Math.round(Math.atan2(msg.payload.accelerometer[1], msg.payload.accelerometer[2]) * 180 / Math.PI * 10) / 10;\n    var angle = context.get('angle')||0;\n\n    // Mounting the sensor head down\n    // -180 degree or 180 degree = 100% horizontal\n    // if more than 5° off, send angle\n    if (anglenew < -175 || anglenew > 175) {\n        // horizontal\n        msg.mqtt = false;\n    } else {\n        // shutter is not horizontal\n        msg.mqtt = true;\n        // don't send updates, if angle doesn't change\n        if (Math.abs(anglenew - angle) < 1) { msg.mqtt=false; }\n    }\n\n    context.set('angle', anglenew);\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/acc\";\n    msg.payload = angle;\n}\n\n// gyroscope\n// actually I don't need it, so it's the JSON in the payload\nif (msg.payload.hasOwnProperty('gyroscope')) {\n    msg.mqtt=true;\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/gyr\";\n}\n\n// Barometer\nif (msg.payload.hasOwnProperty('barometer')) {\n    barnew = msg.payload.barometer[1];\n    barnew = Math.round(barnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var bar = context.get('bar')||0;\n    if (Math.abs(barnew - bar) > 0.15) { msg.mqtt=true; }\n    context.set('bar', barnew);\n    msg.payload = barnew;\n    //msg.payload = {\"Baro\":barnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/bar\";\n}\n\n// Humidity\nif (msg.payload.hasOwnProperty('humidity')) {\n    humnew = JSON.parse(msg.payload.humidity[1]);\n    humnew = Math.round(humnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var hum = context.get('hum')||0;\n    if (Math.abs(humnew - hum) > 0.15) { msg.mqtt=true; }\n    context.set('hum', humnew);\n    msg.payload = humnew;\n    //msg.payload = {\"Humidity\":humnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/hum\";\n}\n\n// Light\nif (msg.payload.hasOwnProperty('lightmeter')) {\n    luxnew = JSON.parse(msg.payload.lightmeter);\n    luxnew = Math.round(luxnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var lux = context.get('lux')||0;\n    if (Math.abs(luxnew - lux) > 2.5) { msg.mqtt=true; }\n    context.set('lux', luxnew);\n    msg.payload = luxnew;\n    //msg.payload = {\"Light\":luxnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/lux\";\n}\n\n// IR-Temperature\nif (msg.payload.hasOwnProperty('IRtemperature')) {\n    tmpnew = JSON.parse(msg.payload.IRtemperature[0]);\n    tmpnew = Math.round(tmpnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var tmp = context.get('tmp')||0;\n    if (Math.abs(tmpnew - tmp) > 0.15) { msg.mqtt=true; }\n    context.set('tmp', tmpnew);\n    msg.payload = tmpnew;\n    //msg.payload ={\"Temperature\": tmpnew};\n    msg.topic=\"sensortag/\" + msg.deviceId + \"/tmp\";\n}\n\n// battery\nif (msg.payload.hasOwnProperty('battery')) {\n    batnew = JSON.parse(msg.payload.battery);\n    batnew = Math.round(batnew * 10) / 10;\n    msg.mqtt=false; // send only if value changed\n    var bat = context.get('baterry')||0;\n    if (Math.abs(batnew - bat) > 0.15) { msg.mqtt=true; }\n    context.set('bat', batnew);\n    msg.payload = batnew;\n    //msg.payload = {\"Battery\":batnew};\n    //msg.topic=\"sensortag/\" + msg.deviceId + \"/bat\";\n    msg.topic= msg.deviceId ;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 3980,
+        "wires": [
+            [
+                "4619891e.a2c33"
+            ]
+        ]
+    },
+    {
+        "id": "6a284511.5c3f54",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "Check Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1180,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "714dd67c.a00bb8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "Convert Payload",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() + 9);\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n/*\nmsg.payload =  {\n    \"timestamp\": getCurrentTime(),\n    //\"devicename\":msg.payload.d.devicename,\n    //\"IRtemperature\":msg.payload.d.IRtemperature[0],\n    //\"humidity\": msg.payload.d.humidity[1],\n    //\"barometer\":msg.payloadd.d.barometer[1],\n    //\"lightmeter\":msg.payload.d.lightmeter,\n    //\"battery\":msg.payload.d.battery\n    \"d\":msg.payload.d\n    //\"humidity\": msg.payload.d.humidity,\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n*/\n\nif (msg.payload === 'Temperature') {\n    msg.payload = {\n        //\"timestamp\": getCurrentTime(),\n        \"Temperature\":msg.payload.Temperature\n        \n    };\n    msg.topic=\"sensortag/\" + msg.payload.deviceId + \"/tmp\";\n}\n/*\nif (msg.payload === 'Baro') {\n    msg.payload = {\n        //\"timestamp\": getCurrentTime(),\n        \"Baro\":msg.payload.Baro\n        \n    };\n    msg.topic=\"sensortag/\" + msg.payload.deviceId + \"/bar\";\n}\n*/\nif (msg.payload === 'Humidity') {\n    msg.payload = {\n        //\"timestamp\": getCurrentTime(),\n        \"Humidity\":msg.payload.Humidity\n        \n    };\n    msg.topic=\"sensortag/\" + msg.payload.deviceId + \"/hum\";\n} \nif (msg.payload === 'Light') {\n    msg.payload = {\n        //\"timestamp\": getCurrentTime(),\n        \"Light\":msg.payload.Light\n        \n    };\n    msg.topic=\"sensortag/\" + msg.payload.deviceId + \"/lux\";\n}\nif (msg.payload === 'Battery') {\n    msg.payload = {\n        //\"timestamp\": getCurrentTime(),\n        \"Battery\":msg.payload.Battery\n        \n    };\n    msg.topic=\"sensortag/\" + msg.payload.deviceId + \"/bat\";\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 910,
+        "y": 540,
+        "wires": [
+            [
+                "6a284511.5c3f54",
+                "a5553dbd.41051",
+                "901402fd.040b18",
+                "2ba89cdd.0dddbc"
+            ]
+        ]
+    },
+    {
+        "id": "7e5b0335.75622c",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1350,
+        "y": 3100,
+        "wires": [
+            [
+                "7c9cf3bb.099fec"
+            ]
+        ]
+    },
+    {
+        "id": "cbcc922e.e37eb8",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "ST-1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1730,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2ba89cdd.0dddbc",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "deviceId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ST-1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ST-2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 1100,
+        "wires": [
+            [
+                "220edecd.0baeba"
+            ],
+            [
+                "36838ec7.da4dc2"
+            ]
+        ]
+    },
+    {
+        "id": "7c9cf3bb.099fec",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1510,
+        "y": 3100,
+        "wires": [
+            [
+                "40d19f1c.4ab628"
+            ]
+        ]
+    },
+    {
+        "id": "c0892247.45728",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "ST-2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1730,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "a5553dbd.41051",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "Check Output Object All",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1210,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "40d19f1c.4ab628",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.Temperature",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Humidity",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Baro",
+                "pt": "msg",
+                "to": "payload.data.Baro",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Light",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Battery",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.data",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1700,
+        "y": 3100,
+        "wires": [
+            [
+                "a6b0b738.e26d58"
+            ]
+        ]
+    },
+    {
+        "id": "a6b0b738.e26d58",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1910,
+        "y": 3100,
+        "wires": []
+    },
+    {
+        "id": "409d736.6fa950c",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Timestamp,Temperature,Humidity,Light,Battery",
+        "skip": "0",
+        "strings": true,
+        "x": 1910,
+        "y": 520,
+        "wires": [
+            [
+                "2e96a9a6.09b526"
+            ]
+        ]
+    },
+    {
+        "id": "2e96a9a6.09b526",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST-1_all_20191115.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2160,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0bb1cc1.f6c1b8",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Timestamp,Temperature,Humidity,Light,Battery",
+        "skip": "0",
+        "strings": true,
+        "x": 1910,
+        "y": 560,
+        "wires": [
+            [
+                "32ab86ce.14111a"
+            ]
+        ]
+    },
+    {
+        "id": "32ab86ce.14111a",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST-2_all_20191115.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2160,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "901402fd.040b18",
+        "type": "switch",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "property": "deviceId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ST-1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ST-2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 540,
+        "wires": [
+            [
+                "2063eac5.ad8eb6"
+            ],
+            [
+                "309dfd1d.b1716a"
+            ]
+        ]
+    },
+    {
+        "id": "1552736a.9072b5",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "JSON String to Object -> switch",
+        "info": "",
+        "x": 530,
+        "y": 3200,
+        "wires": []
+    },
+    {
+        "id": "125489dc.45edbe",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 840,
+        "wires": [
+            [
+                "97020e93.60045",
+                "71ed2a19.19b904"
+            ]
+        ]
+    },
+    {
+        "id": "97020e93.60045",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 2130,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "71ed2a19.19b904",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "ae018ca.869347",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2130,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "cca3b899.ea117",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "csv形式で保存",
+        "info": "",
+        "x": 1140,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e48cb431.c8da08",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "（確認用）センサ値の可視化",
+        "info": "",
+        "x": 1180,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8c60733a.ab6c",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 880,
+        "wires": [
+            [
+                "e30a14c6.0ae2c"
+            ]
+        ]
+    },
+    {
+        "id": "ec5b79ea.e9cf9",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 960,
+        "wires": [
+            [
+                "ad5b49ff.b8d8b"
+            ]
+        ]
+    },
+    {
+        "id": "eade610c.d0ae8",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1000,
+        "wires": [
+            [
+                "e75740a7.4f1ac8"
+            ]
+        ]
+    },
+    {
+        "id": "e30a14c6.0ae2c",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "ae018ca.869347",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Humidity",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2120,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ad5b49ff.b8d8b",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "ae018ca.869347",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Light",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2110,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "e75740a7.4f1ac8",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "ae018ca.869347",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2120,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "253803ef.278d4c",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1200,
+        "wires": [
+            [
+                "e1ae0e5c.8c84d"
+            ]
+        ]
+    },
+    {
+        "id": "e1ae0e5c.8c84d",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "35891733.c582d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2130,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "f6a13865.e9e07",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1240,
+        "wires": [
+            [
+                "ba557f7b.6d2b7"
+            ]
+        ]
+    },
+    {
+        "id": "218f85fd.d0b4ca",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1320,
+        "wires": [
+            [
+                "53d87115.e29908"
+            ]
+        ]
+    },
+    {
+        "id": "2b9ed3f9.c44e24",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1360,
+        "wires": [
+            [
+                "e45b9ff2.4a69c"
+            ]
+        ]
+    },
+    {
+        "id": "ba557f7b.6d2b7",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "35891733.c582d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Humidity",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2120,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "53d87115.e29908",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "35891733.c582d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Light",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2110,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "e45b9ff2.4a69c",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "35891733.c582d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2120,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "fbca9cf.5f9ec6",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Timestamp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1400,
+        "wires": [
+            [
+                "2cc694fa.2d8f0c"
+            ]
+        ]
+    },
+    {
+        "id": "2cc694fa.2d8f0c",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "35891733.c582d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Timestamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2130,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "89fc1fac.6efaf",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Timestamp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 1040,
+        "wires": [
+            [
+                "3481aced.50f1ac"
+            ]
+        ]
+    },
+    {
+        "id": "3481aced.50f1ac",
+        "type": "ui_text",
+        "z": "cc710dc2.0ba05",
+        "group": "ae018ca.869347",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Timestamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2130,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "73186f98.46be78",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1370,
+        "y": 3060,
+        "wires": [
+            [
+                "5f8a793f.e92b8"
+            ]
+        ]
+    },
+    {
+        "id": "5f8a793f.e92b8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1590,
+        "y": 3060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "309dfd1d.b1716a",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1390,
+        "y": 560,
+        "wires": [
+            [
+                "830470f1.9e0d6",
+                "6199c971.63cfe8"
+            ]
+        ]
+    },
+    {
+        "id": "830470f1.9e0d6",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1550,
+        "y": 560,
+        "wires": [
+            [
+                "87ce0e67.718e18"
+            ]
+        ]
+    },
+    {
+        "id": "87ce0e67.718e18",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.Temperature",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Humidity",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Baro",
+                "pt": "msg",
+                "to": "payload.data.Baro",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Light",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Battery",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.data",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1740,
+        "y": 560,
+        "wires": [
+            [
+                "b0bb1cc1.f6c1b8",
+                "f1928c09.87ac8"
+            ]
+        ]
+    },
+    {
+        "id": "2063eac5.ad8eb6",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1390,
+        "y": 520,
+        "wires": [
+            [
+                "dfda18c0.d8589",
+                "6199c971.63cfe8"
+            ]
+        ]
+    },
+    {
+        "id": "dfda18c0.d8589",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1550,
+        "y": 520,
+        "wires": [
+            [
+                "e295f019.b0103"
+            ]
+        ]
+    },
+    {
+        "id": "e295f019.b0103",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.Temperature",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Humidity",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Baro",
+                "pt": "msg",
+                "to": "payload.data.Baro",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Light",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Battery",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.data",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1740,
+        "y": 520,
+        "wires": [
+            [
+                "409d736.6fa950c",
+                "f1928c09.87ac8",
+                "8184aded.e06288"
+            ]
+        ]
+    },
+    {
+        "id": "1901f10e.4e15af",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1470,
+        "y": 1040,
+        "wires": [
+            [
+                "89fc1fac.6efaf",
+                "eade610c.d0ae8",
+                "ec5b79ea.e9cf9",
+                "8c60733a.ab6c",
+                "125489dc.45edbe",
+                "cbcc922e.e37eb8"
+            ]
+        ]
+    },
+    {
+        "id": "36838ec7.da4dc2",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1310,
+        "y": 1160,
+        "wires": [
+            [
+                "7064d996.50be9"
+            ]
+        ]
+    },
+    {
+        "id": "7064d996.50be9",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1470,
+        "y": 1160,
+        "wires": [
+            [
+                "c0892247.45728",
+                "253803ef.278d4c",
+                "f6a13865.e9e07",
+                "218f85fd.d0b4ca",
+                "2b9ed3f9.c44e24",
+                "fbca9cf.5f9ec6"
+            ]
+        ]
+    },
+    {
+        "id": "9dbd8b4e.720578",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "N/A check",
+        "func": "\nif (msg.payload === null) {\n    msg.payload = \"N/A\";\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 3060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "220edecd.0baeba",
+        "type": "join",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1310,
+        "y": 1040,
+        "wires": [
+            [
+                "1901f10e.4e15af"
+            ]
+        ]
+    },
+    {
+        "id": "9abcfba0.36e36",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "Battery Condition",
+        "func": "if(msg.payload.data.trim().length !== 5){\n    msg.payload = \"Battery Error\"; \n}\nelse{\n    msg.payload = \"Battery is Ok\"; \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 990,
+        "y": 2940,
+        "wires": [
+            [
+                "13dc6b67.dcd88d"
+            ]
+        ]
+    },
+    {
+        "id": "f1b4e118.2874e",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "Battery Condition",
+        "func": "if(msg.payload.data.trim().length !== 5){\n    msg.payload = \"Battery Error\"; \n}\nelse{\n    msg.payload = \"Battery is Ok\"; \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 990,
+        "y": 2980,
+        "wires": [
+            [
+                "13dc6b67.dcd88d"
+            ]
+        ]
+    },
+    {
+        "id": "13dc6b67.dcd88d",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1280,
+        "y": 2960,
+        "wires": []
+    },
+    {
+        "id": "361ce2f2.07829e",
+        "type": "delay",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "0.5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 650,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1432dc64.a0aa44",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 750,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b07effda.a51638",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "819715dc.a95398"
+            ]
+        ]
+    },
+    {
+        "id": "ca8beed8.fc5458",
+        "type": "camerapi-takephoto",
+        "z": "6f35b763.d5ed18",
+        "filemode": "1",
+        "filename": "",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "10",
+        "rotation": "180",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "1432dc64.a0aa44"
+            ]
+        ]
+    },
+    {
+        "id": "819715dc.a95398",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + ' ';\n    d += ('0' + date.getHours()).slice(-2) + '-';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.filename =  \"photo\";\n//msg.fileformat = JPEG;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "ca8beed8.fc5458"
+            ]
+        ]
+    },
+    {
+        "id": "281aee89.73610a",
+        "type": "comment",
+        "z": "6f35b763.d5ed18",
+        "name": "Take Photo Process",
+        "info": "",
+        "x": 130,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1741ff74.ee0df1",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "0 6-18 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "a67c80f4.177298"
+            ]
+        ]
+    },
+    {
+        "id": "34f8fdf3.0bfc3a",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 550,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f0ef6a0.672a198",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "e3f585c9.775be8"
+            ]
+        ]
+    },
+    {
+        "id": "e3f585c9.775be8",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "func": "msg.filemode = \"1\";\nmsg.filename = \"photo\";\nmsg.fileformat = \"jpeg\";\nmsg.filedefpath = \"1\";\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb3f9e87.087b5",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1030,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "e016f5ac.00a34",
+        "type": "daemon",
+        "z": "cc710dc2.0ba05",
+        "name": "Connect to Sensortags",
+        "command": "sudo",
+        "args": "python -u /home/pi/picture_pi.py",
+        "autorun": false,
+        "cr": false,
+        "redo": false,
+        "op": "string",
+        "x": 510,
+        "y": 1560,
+        "wires": [
+            [
+                "58ebdf76.cdf8b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f9c1395.7925648",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 890,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "b7394d9a.90ede8",
+        "type": "inject",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 240,
+        "y": 1560,
+        "wires": [
+            [
+                "e016f5ac.00a34"
+            ]
+        ]
+    },
+    {
+        "id": "75284f5a.05aae8",
+        "type": "debug",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 378,
+        "y": 820.25,
+        "wires": []
+    },
+    {
+        "id": "e873f85c.fecb78",
+        "type": "file in",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "filename": "/home/pi/iot_sensor_dataset.csv",
+        "format": "utf8",
+        "x": 436,
+        "y": 587,
+        "wires": [
+            [
+                "ff7956b.0ebf428"
+            ]
+        ]
+    },
+    {
+        "id": "ff7956b.0ebf428",
+        "type": "csv",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "x": 667,
+        "y": 584.5,
+        "wires": [
+            [
+                "8447e2fc.47061"
+            ]
+        ]
+    },
+    {
+        "id": "f5a92c8d.93f38",
+        "type": "inject",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Sensor event trigger",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 153.5,
+        "y": 587,
+        "wires": [
+            [
+                "e873f85c.fecb78"
+            ]
+        ]
+    },
+    {
+        "id": "c698729c.7fbae8",
+        "type": "comment",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Send sensor events to Watson IoT Platform.",
+        "info": "",
+        "x": 229,
+        "y": 531.5,
+        "wires": []
+    },
+    {
+        "id": "3a42cd8c.d4c56a",
+        "type": "comment",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Recieve commands from Watson IoT platform",
+        "info": "",
+        "x": 229,
+        "y": 774.5,
+        "wires": []
+    },
+    {
+        "id": "ba147207.27471",
+        "type": "inject",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Event - Running",
+        "topic": "",
+        "payload": "{\"footfall\":31,\"atemp\":2,\"selfLR\":7,\"ClinLR\":2,\"DoleLR\":6,\"PID\":6,\"outpressure\":19,\"inpressure\":4,\"temp\":3}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 595.5,
+        "y": 679.75,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dcfd725.74f38",
+        "type": "inject",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Event - Failing",
+        "topic": "",
+        "payload": "{\"footfall\":31,\"atemp\":1,\"selfLR\":7,\"ClinLR\":2,\"DoleLR\":6,\"PID\":1,\"outpressure\":20,\"inpressure\":4,\"temp\":1}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 597.5,
+        "y": 731.75,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8447e2fc.47061",
+        "type": "debug",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 795.5,
+        "y": 517,
+        "wires": []
+    },
+    {
+        "id": "58ebdf76.cdf8b",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "func": "// reject empty messages\nif ( msg.payload.trim().length === 0 ) {\n    return null;\n}\n\n// This try/catch seems to be needed because\n// occasionally a malformed JSON string is received\n// from the python script.\n// I couldn't see anything wrong with the strings that raise\n// exceptions, but this stops the errors causing\n// irritating problems.\n// UPDATE since adding the split node and the test for\n// zero length (after trimming) above, I haven't\n// seen the json conversion fail. Leaving it here just in case\n\ntry {\n    msg.payload= JSON.parse(msg.payload.trim());\n} catch(err) {\n    node.error(\"Couldn't convert JSON to object:\"+msg.payload);\n    return null;\n}\n\n// Set the data to have come from the device's assigned name\n// The IoT output node must assert the device\n//  type (along with the login credentials for the Pi gateway)!\nmsg.deviceId = msg.payload.devicename;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 1560,
+        "wires": [
+            [
+                "f9c1395.7925648"
+            ]
+        ]
+    },
+    {
+        "id": "a67c80f4.177298",
+        "type": "exec",
+        "z": "6f35b763.d5ed18",
+        "command": "sudo",
+        "addpay": false,
+        "append": "python /home/pi/picture_pi.py",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "34f8fdf3.0bfc3a",
+                "1fdc5dfd.2b3522"
+            ],
+            [],
+            [
+                "1fdc5dfd.2b3522",
+                "34f8fdf3.0bfc3a"
+            ]
+        ]
+    },
+    {
+        "id": "5094d309.74a3b4",
+        "type": "file in",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "filename": "/home/pi/PictureContainer/IMG_20191119170001.jpg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 700,
+        "y": 1080,
+        "wires": [
+            [
+                "bb3f9e87.087b5"
+            ]
+        ]
+    },
+    {
+        "id": "cbd61fd9.3d47c",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "5094d309.74a3b4"
+            ]
+        ]
+    },
+    {
+        "id": "f1928c09.87ac8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "Temp & Hum Processing",
+        "func": "/*\n＜飽差計算方法＞\n　①水蒸気圧\n　　＝6.1078＊10＾((7.5＊気温/(気温＋237.3)))\n\n　②飽和水蒸気量\n　　＝217＊①水蒸気圧/(気温＋273.15)\n\n　③飽差\n　　＝(100－相対湿度)＊②飽和水蒸気量/100\n*/\n\n/*\n＜露点温度計算方法＞\n　飽和蒸気圧と温度の関係を表すTetens式を使うとのこと。\n　E(t)=6.1078*10^{7.5t/(t+237.3)}\n\n　①飽和水蒸気圧\n　　＝6.1078＊10＾((7.5＊気温/(気温＋237.3)))\n\n　②水蒸気圧\n　　＝①飽和水蒸気圧*相対湿度/100\n\n　③露点温度\n　　＝237.3*log10(6.1078/②水蒸気圧)/(log10(②水蒸気圧/6.1078)-7.5)\n*/\n\n/*\nTetens式\n    E(t)=6.1078*10^{7.5t/(t+237.3)}\n*/\n\n//Input Data\nvar T = msg.payload.Temperature; //気温[℃]\nvar RH = msg.payload.Humidity; //相対湿度[%]\n\nvar VH = 0; //絶対湿度[g/m^3]\n\nvar TD = 0; //露点温度[℃]\nvar Et = 0; //飽和水蒸気圧[Pa]\nvar Es = 0; //水蒸気圧[hPa]\nvar At = 0; //飽和水蒸気量[g/m^3]\n\nvar HD = 0; //飽差[g/m^3]\n\n\n\n//飽和水蒸気圧\nEt = (6.1078 * Math.pow(10,((7.5 * T /(T + 237.3 ))))).toFixed(2);\n//水蒸気圧\nEs = (Et * (RH / 100)).toFixed(2);\n//露点温度\nTD = (237.3 * Math.LOG10E * Math.log(6.1078 / Es)/(Math.LOG10E * Math.log(Es / 6.1078) - 7.5)).toFixed(2);\n//飽和水蒸気量\nAt = (217 * Et / (T + 273.15)).toFixed(2);\n//飽差\nHD = ((100 - RH ) * At /100).toFixed(2);\n\n//絶対湿度\nVH = (0.794 * Math.pow(10,(-2)) * Es / 1 + 0.00366 * T).toFixed(2);\n\n\nmsg.payload = {\n    \"HD\":HD,\n    \"TD\":TD,\n    \"VH\":VH,\n    \"Es\":Es,\n    \"Et\":Et,\n    \"At\":At,\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1970,
+        "y": 480,
+        "wires": [
+            [
+                "35393207.9dcd8e"
+            ]
+        ]
+    },
+    {
+        "id": "8184aded.e06288",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1920,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "35393207.9dcd8e",
+        "type": "debug",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2190,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "87c11cfe.db39c8",
+        "type": "inject",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1740,
+        "y": 360,
+        "wires": [
+            [
+                "af85a493.c3672"
+            ]
+        ]
+    },
+    {
+        "id": "af85a493.c3672",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "func": "msg.payload = {\n    Temperature: 9,\n    Humidity: 55\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1940,
+        "y": 360,
+        "wires": [
+            [
+                "f1928c09.87ac8"
+            ]
+        ]
+    },
+    {
+        "id": "1eeadd0d.26d483",
+        "type": "comment",
+        "z": "6f35b763.d5ed18",
+        "name": "Mail Photo Process",
+        "info": "",
+        "x": 130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "6d727e5c.c2eb2",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "[サンプル]メール送信ノード",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 220,
+        "y": 1000,
+        "wires": [
+            [
+                "3b0779aa.653516"
+            ]
+        ]
+    },
+    {
+        "id": "3b0779aa.653516",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "メール設定",
+        "func": "msg.topic=\"メール件名\"\nmsg.payload=\"メール本文\"\nmsg.attachments = {filename : 'Strawberry.jpg',path : '/home/pi/PictureContainer/IMG_'+msg.payload.Timestamp+'.jpg'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 1000,
+        "wires": [
+            [
+                "d86ec31c.5f70f"
+            ]
+        ]
+    },
+    {
+        "id": "d86ec31c.5f70f",
+        "type": "e-mail",
+        "z": "6f35b763.d5ed18",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "ky15212@tomakomai.kosen-ac.jp",
+        "dname": "メール送信",
+        "x": 630,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "c7e34d42.3fd87",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear();\n    d += ('0' + (date.getMonth() + 1)).slice(-2);\n    d += ('0' + date.getDate()).slice(-2);\n    d += ('0' + date.getHours()).slice(-2);\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  getCurrentTime();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 540,
+        "wires": [
+            [
+                "3632ccd9.808d54"
+            ]
+        ]
+    },
+    {
+        "id": "7c37513b.00bac",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "メール送信ノード",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "c7e34d42.3fd87"
+            ]
+        ]
+    },
+    {
+        "id": "3632ccd9.808d54",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "メール設定",
+        "func": "var path = msg.payload;\n\nvar year = path.substr(0,4);\nvar month = path.substr(4,2);\nvar date = path.substr(6,2);\nvar hour = path.substr(8,2);\nvar minute = path.substr(10,2);\n\nvar result = year+\"年\"+month+\"月\"+date+\"日\"+hour+\"時\"+minute+\"分\";\n\nmsg.topic = \"「越後姫」環境モニタリング\"\nmsg.payload = result+\"に撮影された写真です。\"\nmsg.attachments = {filename : 'Strawberry.jpg',path : '/home/pi/PictureContainer/IMG_'+path+'.jpg'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 540,
+        "wires": [
+            [
+                "672cdfc.39ee92"
+            ]
+        ]
+    },
+    {
+        "id": "672cdfc.39ee92",
+        "type": "e-mail",
+        "z": "6f35b763.d5ed18",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "ky15212@tomakomai.kosen-ac.jp",
+        "dname": "メール送信",
+        "x": 1150,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1fdc5dfd.2b3522",
+        "type": "delay",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "c7e34d42.3fd87"
+            ]
+        ]
+    },
+    {
+        "id": "dc4014bb.9abab8",
+        "type": "switch",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "property": "payload.cmd",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "SendPhoto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SendCSV",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Hello World! from IBM Cloud",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 350,
+        "y": 880,
+        "wires": [
+            [
+                "e98c0991.f68798"
+            ],
+            [
+                "e3917b07.5efe08"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e98c0991.f68798",
+        "type": "link out",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "links": [
+            "d20ed60d.f8ce68",
+            "c67f13df.72c1a"
+        ],
+        "x": 495,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d20ed60d.f8ce68",
+        "type": "link in",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "links": [
+            "e98c0991.f68798"
+        ],
+        "x": 635,
+        "y": 600,
+        "wires": [
+            [
+                "1202a54b.c7454b"
+            ]
+        ]
+    },
+    {
+        "id": "1202a54b.c7454b",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    \n    var d = date.getFullYear();\n        d += ('0' + (date.getMonth() + 1)).slice(-2);\n        d += ('0' + date.getDate()).slice(-2);\n    if(date.getHours()>18 || date.getHours()<6){\n        d += ('18');\n    }\n    else{\n        d += ('0' + date.getHours()).slice(-2);\n    }\n        d += ('00');//+ ':';\n    return d;\n};\n   \nmsg.payload =  getCurrentTime();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 785,
+        "y": 600,
+        "wires": [
+            [
+                "6e30c18.b166f4",
+                "3632ccd9.808d54",
+                "a6341a5f.b89268"
+            ]
+        ]
+    },
+    {
+        "id": "6e30c18.b166f4",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1130,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ac47a765.1248c8",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "メール送信ノード",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "1202a54b.c7454b"
+            ]
+        ]
+    },
+    {
+        "id": "ec8e4046.bd133",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "Reset",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "dbcd284b.eb8ca8"
+            ]
+        ]
+    },
+    {
+        "id": "dbcd284b.eb8ca8",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "func": "mag.reset = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "1fdc5dfd.2b3522"
+            ]
+        ]
+    },
+    {
+        "id": "a6341a5f.b89268",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "func": "var path = msg.payload;\nvar year = path.substr(0,4);\nvar month = path.substr(4,2);\nvar date = path.substr(6,2);\nvar hour = path.substr(8,2);\nvar minute = path.substr(10,2);\n\nmsg.payload = year+\"年\"+month+\"月\"+date+\"日\"+hour+\"時\"+minute+\"分\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 640,
+        "wires": [
+            [
+                "6e30c18.b166f4"
+            ]
+        ]
+    },
+    {
+        "id": "18e90fa3.7645e",
+        "type": "wiotp out",
+        "z": "cc710dc2.0ba05",
+        "authType": "g",
+        "qs": "false",
+        "qsDeviceId": "",
+        "deviceKey": "e30ea184.cc433",
+        "deviceType": "Sensortag",
+        "deviceId": "",
+        "event": "event",
+        "format": "json",
+        "qos": "",
+        "name": "",
+        "x": 870,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "50a292b9.09c90c",
+        "type": "wiotp in",
+        "z": "3cd7dfb9.44bd3",
+        "authType": "g",
+        "deviceKey": "e30ea184.cc433",
+        "deviceType": "",
+        "deviceId": "",
+        "command": "+",
+        "commandType": "g",
+        "qos": 0,
+        "name": "",
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "75284f5a.05aae8",
+                "dc4014bb.9abab8"
+            ]
+        ]
+    },
+    {
+        "id": "e3917b07.5efe08",
+        "type": "link out",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "links": [
+            "ccd2bfbd.733b5",
+            "c67f13df.72c1a"
+        ],
+        "x": 495,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ccd2bfbd.733b5",
+        "type": "link in",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "links": [
+            "e3917b07.5efe08"
+        ],
+        "x": 635,
+        "y": 820,
+        "wires": [
+            [
+                "5fc6e832.632748"
+            ]
+        ]
+    },
+    {
+        "id": "5fc6e832.632748",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    \n    var d = date.getFullYear();\n        d += ('0' + (date.getMonth() + 1)).slice(-2);\n        d += ('0' + date.getDate()).slice(-2);\n        d += ('0' + date.getHours()).slice(-2);\n        d += ('0' + date.getMinutes()).slice(-2) ;\n    //if(date.getHours()>18 || date.getHours()<6){\n    //    d += ('18');\n    //}\n    //else{\n    //    d += ('0' + date.getHours()).slice(-2);\n    //}\n    //    d += ('00');//+ ':';\n    return d;\n};\n   \nmsg.payload =  getCurrentTime();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 785,
+        "y": 820,
+        "wires": [
+            [
+                "3e0ef75a.f7c398",
+                "36e384fd.c2831c",
+                "b887dced.6a7f6"
+            ]
+        ]
+    },
+    {
+        "id": "3e0ef75a.f7c398",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1130,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f018cf23.b1a87",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "メール送信ノード",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 570,
+        "y": 900,
+        "wires": [
+            [
+                "5fc6e832.632748"
+            ]
+        ]
+    },
+    {
+        "id": "b887dced.6a7f6",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "func": "var path = msg.payload;\nvar year = path.substr(0,4);\nvar month = path.substr(4,2);\nvar date = path.substr(6,2);\nvar hour = path.substr(8,2);\nvar minute = path.substr(10,2);\n\nmsg.payload = year+\"年\"+month+\"月\"+date+\"日\"+hour+\"時\"+minute+\"分\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 860,
+        "wires": [
+            [
+                "3e0ef75a.f7c398"
+            ]
+        ]
+    },
+    {
+        "id": "36e384fd.c2831c",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "メール設定",
+        "func": "var path = msg.payload;\n\nvar year = path.substr(0,4);\nvar month = path.substr(4,2);\nvar date = path.substr(6,2);\nvar hour = path.substr(8,2);\nvar minute = path.substr(10,2);\n\nvar result = year+\"年\"+month+\"月\"+date+\"日\"+hour+\"時\"+minute+\"分\";\n\nmsg.topic = \"「越後姫」環境モニタリング\"\nmsg.payload = result+\"までの全測定データです。\"\nmsg.attachments = [\n    {filename : 'ST_AllData.csv',path : '/home/pi/ST_AllData.csv'},\n    {filename : 'ST-1_Data.csv',path : '/home/pi/ST-1_all_20191115.csv'},\n    {filename : 'ST-2_Data.csv',path : '/home/pi/ST-2_all_20191115.csv'}\n    ]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 760,
+        "wires": [
+            [
+                "e31054db.058788"
+            ]
+        ]
+    },
+    {
+        "id": "e31054db.058788",
+        "type": "e-mail",
+        "z": "6f35b763.d5ed18",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "ky15212@tomakomai.kosen-ac.jp",
+        "dname": "メール送信",
+        "x": 1150,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "e97915b1.962a38",
+        "type": "comment",
+        "z": "6f35b763.d5ed18",
+        "name": "Mail CSV Process",
+        "info": "",
+        "x": 130,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "337c4834.35d168",
+        "type": "csv",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": false,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "DeviceID,Timestamp,Temperature,Humidity,Light,Battery",
+        "skip": "0",
+        "strings": true,
+        "x": 1910,
+        "y": 600,
+        "wires": [
+            [
+                "ea875958.851cf8"
+            ]
+        ]
+    },
+    {
+        "id": "ea875958.851cf8",
+        "type": "file",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "filename": "/home/pi/ST_AllData.csv",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2130,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6199c971.63cfe8",
+        "type": "function",
+        "z": "cc710dc2.0ba05",
+        "name": "+Timestamp",
+        "func": "var getCurrentTime = function () {\n    var date = new Date();\n    date.setHours(date.getHours() ); //+ 9\n    var d = date.getFullYear() + '-';\n    d += ('0' + (date.getMonth() + 1)).slice(-2) + '-';\n    d += ('0' + date.getDate()).slice(-2) + 'T';\n    d += ('0' + date.getHours()).slice(-2) + ':';\n    d += ('0' + date.getMinutes()).slice(-2) ;//+ ':';\n    //d += ('0' + date.getSeconds()).slice(-2) + 'Z';\n    return d;\n};\n\nmsg.payload =  {\n    \"Timestamp\" : getCurrentTime(),\n    \"data\": msg.payload\n    //\"Devicename\":msg.payload.d.devicename,\n    //\"Temperature\" : msg.payload.Temperature,\n    //\"Humidity\":msg.payload.Humidity,\n    //\"Barometer\":msg.payload.Baro,\n    //\"Lightmeter\":msg.payload.Light,\n    //\"Battery\":msg.payload.Battery\n    //\"d\": msg.payload.d\n    //\"objectTemp\": msg.payload.d.objectTemp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1550,
+        "y": 600,
+        "wires": [
+            [
+                "4e73258b.8d6d3c"
+            ]
+        ]
+    },
+    {
+        "id": "4e73258b.8d6d3c",
+        "type": "change",
+        "z": "cc710dc2.0ba05",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.DeviceID",
+                "pt": "msg",
+                "to": "deviceId",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Temperature",
+                "pt": "msg",
+                "to": "payload.data.Temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Humidity",
+                "pt": "msg",
+                "to": "payload.data.Humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Baro",
+                "pt": "msg",
+                "to": "payload.data.Baro",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Light",
+                "pt": "msg",
+                "to": "payload.data.Light",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.Battery",
+                "pt": "msg",
+                "to": "payload.data.Battery",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.data",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1740,
+        "y": 600,
+        "wires": [
+            [
+                "337c4834.35d168"
+            ]
+        ]
+    },
+    {
+        "id": "64091124.e14fa",
+        "type": "comment",
+        "z": "cc710dc2.0ba05",
+        "name": "2020/01/15~",
+        "info": "",
+        "x": 2330,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "662ebbec.347674",
+        "type": "function",
+        "z": "6f35b763.d5ed18",
+        "name": "メール設定",
+        "func": "var path = msg.payload;\n\nvar year = path.substr(0,4);\nvar month = path.substr(4,2);\nvar date = path.substr(6,2);\nvar hour = path.substr(8,2);\nvar minute = path.substr(10,2);\n\nvar result = year+\"年\"+month+\"月\"+date+\"日\"+hour+\"時\"+minute+\"分\";\n\nmsg.topic = \"「越後姫」環境モニタリング\"\nmsg.payload = result+\"に撮影された写真です。\"\nmsg.attachments = {filename : 'Strawberry.jpg',path : '/home/pi/PictureContainer/IMG_'+path+'.jpg'}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 480,
+        "wires": [
+            [
+                "672cdfc.39ee92"
+            ]
+        ]
+    },
+    {
+        "id": "23fd52fb.625dce",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "指定時間",
+        "topic": "",
+        "payload": "202001161635",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 800,
+        "y": 480,
+        "wires": [
+            [
+                "662ebbec.347674"
+            ]
+        ]
+    },
+    {
+        "id": "ac944885.0e2068",
+        "type": "inject",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "topic": "",
+        "payload": "テスト",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "e4e14a7d.d484d8"
+            ]
+        ]
+    },
+    {
+        "id": "4d9dbc26.55d3c4",
+        "type": "comment",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Line アクセストークン",
+        "info": "ser4zMe8ZBazN6UvvE03IxlKVI0AWpplViqlb1Cnoay",
+        "x": 560,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "de663f6e.bd02",
+        "type": "line-notify",
+        "z": "3cd7dfb9.44bd3",
+        "name": "Line Notify",
+        "message": "",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "1",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "7d3f1d8.cd6a2e4",
+        "x": 550,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4e14a7d.d484d8",
+        "type": "function",
+        "z": "3cd7dfb9.44bd3",
+        "name": "",
+        "func": "\nmsg ={\n    message :  \"hello\",\n    //stickerId : \"52002734\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 1080,
+        "wires": [
+            [
+                "de663f6e.bd02"
+            ]
+        ]
+    },
+    {
+        "id": "c839aa5e.1d15b8",
+        "type": "inject",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 1300,
+        "wires": [
+            [
+                "e5c37a2a.b0ea88"
+            ]
+        ]
+    },
+    {
+        "id": "38b1ff3e.3d59f",
+        "type": "debug",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 570,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "e5c37a2a.b0ea88",
+        "type": "exec",
+        "z": "6f35b763.d5ed18",
+        "command": "sudo",
+        "addpay": false,
+        "append": "python /home/pi/picture_pi_forLine.py",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 1300,
+        "wires": [
+            [
+                "38b1ff3e.3d59f",
+                "347573d2.dabb0c"
+            ],
+            [
+                "38b1ff3e.3d59f"
+            ],
+            [
+                "347573d2.dabb0c",
+                "38b1ff3e.3d59f"
+            ]
+        ]
+    },
+    {
+        "id": "347573d2.dabb0c",
+        "type": "delay",
+        "z": "6f35b763.d5ed18",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 600,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    }
+]
